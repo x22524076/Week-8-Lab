@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Week 8 lab</title>
+		<!-- add the link tag to the style.css which will be in a folder -->
+		<link rel="stylesheet" href="CSS/StyleSheet.css">
+	</head>
+	<body>
+		<h1>Graded lab exercise - week 8</h1>
+		<ol>
+			<li id="first-line">Line to be deleted</li>
+			<li>Add 3 examples of JavaScript code</li>
+			<li>Create a repo in GitHub and add your project when finished</li>
+			<li>Save the link to the GitHub repo in a text document and upload it to Moodle</li>
+			<ul>
+				<li>Your link should look like this https://github/username/repoName.git</li>
+			</ul>
+		</ol>
+		<button id="delete-button" onclick="deleteLine()">Delete</button>
+
+		<!-- add your JavaScript inside the section below -->
+		<script type="text/javascript">
+			console.log("Hello world!");
+			var deleteButton = document.getElementById("delete-button");
+			var firstLine = document.getElementById("first-line");
+
+			// Deleting elements
+			function deleteLine() {
+				firstLine.remove();
+				deleteButton.remove();
+				alert("An element and a button will be removed");
+			}
+		</script>
+	</body>
+</html>
